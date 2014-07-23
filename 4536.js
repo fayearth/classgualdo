@@ -13,11 +13,11 @@ $(function() {
 	});
 	$('.displayTwitter').on('click', function(){
 		$(this).after('<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>');
-		(".g-plusone").attr("data-href","http://t-arafansindo.blogspot.com/");
 		loadTwitter();
 	});
 	$('.displayGoogle').on('click', function(){
 		$(this).after('<div class="g-plusone" data-annotation="bubble" data-href="#" data-size="medium"/>');
+		(".g-plusone").attr("data-href","http://t-arafansindo.blogspot.com/");
 		loadGooglePlus();
 	});
 	$('.displayFacebook').on('click', function(){
