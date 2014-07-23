@@ -13,6 +13,7 @@ $(function() {
 	});
 	$('.displayTwitter').on('click', function(){
 		$(this).after('<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>');
+		(".g-plusone").attr("data-href","http://t-arafansindo.blogspot.com/");
 		loadTwitter();
 	});
 	$('.displayGoogle').on('click', function(){
