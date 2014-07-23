@@ -16,11 +16,11 @@ $(function() {
 		loadTwitter();
 	});
 	$('.displayGoogle').on('click', function(){
-		$(this).after('<div class="g-plusone" data-annotation="bubble" data-height="20" data-href="t-arafansindo.blogspot.com" data-size="medium" data-width="90"/>');
+		$(this).after('<div class="g-plusone" data-annotation="bubble" data-height="20" data-href="http://t-arafansindo.blogspot.com/" data-size="medium" data-width="90"/>');
 		loadGooglePlus();
 	});
 	$('.displayFacebook').on('click', function(){
-		$(this).after('<div class="fb-like" data-layout="button_count" data-share="false" data-show-faces="false" data-width="90"/>');
+		$(this).after('<div class="fb-like" data-href="http://t-arafansindo.blogspot.com/" data-layout="button_count" data-share="false" data-show-faces="false" data-width="90"/>');
 		loadFacebook();
 	});
 });
