@@ -17,6 +17,7 @@ $(function() {
 	});
 	$('.displayGoogle').on('click', function(){
 		$(this).after('<div class="g-plusone" data-annotation="bubble" data-height="20" data-href="http://t-arafansindo.blogspot.com/" data-size="medium" data-width="90"/>');
+		gapi.plusone.render("bubble", {"size": "medium", "count": "true", "href": "http://t-arafansindo.blogspot.com/" });
 		loadGooglePlus();
 	});
 	$('.displayFacebook').on('click', function(){
