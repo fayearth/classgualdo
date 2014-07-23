@@ -16,8 +16,7 @@ $(function() {
 		loadTwitter();
 	});
 	$('.displayGoogle').on('click', function(){
-		$(this).after('<div class="g-plusone" data-annotation="bubble" data-href="#" data-size="medium"/>');
-		(".g-plusone").attr("data-href","http://t-arafansindo.blogspot.com/");
+		$(this).after('<div class="g-plusone"/>');
 		loadGooglePlus();
 	});
 	$('.displayFacebook').on('click', function(){
@@ -48,7 +47,7 @@ function loadGooglePlus()
 {
 	if (typeof (gapi) != 'undefined') {
         $(".g-plusone").each(function () {
-            gapi.plusone.render($(this).get(0));
+            gapi.plusone.render($(this).get(0),{"count": "true", "annotation": "bubble", "href": "http://t-arafansindo.blogspot.com/", "size": "medium"});
         });
     } else {
         $.getScript('https://apis.google.com/js/plusone.js');
